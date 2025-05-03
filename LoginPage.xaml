@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KitchyTech.LoginPage"
+             Title="LoginPage"
+             BackgroundColor="White">
+
+    <VerticalStackLayout
+        Padding="30"  
+        Spacing="25"  
+        VerticalOptions="Center">
+
+        <Image  
+           Source="kitchytech.png"  
+           HeightRequest="150"  
+           HorizontalOptions="Center" />
+
+        <Entry  
+          x:Name="emailEntry"
+          Placeholder="Email"  
+          Keyboard="Email"
+          PlaceholderColor="Gray"
+          TextColor="Black" />
+
+        <Entry  
+          x:Name="passwordEntry"  
+          Placeholder="Password"  
+          IsPassword="True"
+          PlaceholderColor="Gray"
+          TextColor="Black" />
+
+        <Label
+            Text="Forgot Password?"
+            FontSize="12"
+            TextColor="Gray"
+            HorizontalOptions="End" />
+
+        <Button  
+          Text="Login"  
+          Clicked="OnLoginClicked"
+          BackgroundColor="#555"
+          TextColor="White"
+          CornerRadius="25"
+          HeightRequest="45" />
+
+        <Button
+            Text="Register"
+            Clicked="OnRegisterClicked"
+            BackgroundColor="#555"
+            TextColor="White"
+            CornerRadius="25"/>
+    </VerticalStackLayout>
+</ContentPage>
